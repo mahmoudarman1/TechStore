@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore | Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">TechStore</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li class="nav-item">
+              <a class="btn btn-outline-light" href="cart.html"><i class="bi bi-cart3"></i> Cart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="py-5 bg-light">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4">
+          <div>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-2">
+                <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Shop</li>
+              </ol>
+            </nav>
+            <h1 class="fw-bold mb-0">Shop All Products</h1>
+          </div>
+          <div class="mt-3 mt-md-0">
+            <span class="badge bg-primary-subtle text-primary-emphasis">120 items</span>
+          </div>
+        </div>
+
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <div class="row g-3 align-items-center">
+              <div class="col-12 col-md-4">
+                <label class="form-label visually-hidden" for="searchProducts">Search products</label>
+                <input id="searchProducts" class="form-control" type="search" placeholder="Search products" />
+              </div>
+              <div class="col-12 col-md-3">
+                <label class="form-label visually-hidden" for="categoryFilter">Category</label>
+                <select id="categoryFilter" class="form-select">
+                  <option selected>All Categories</option>
+                  <option>Laptops</option>
+                  <option>Smartphones</option>
+                  <option>Accessories</option>
+                  <option>Gaming</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-3">
+                <label class="form-label visually-hidden" for="sortBy">Sort by</label>
+                <select id="sortBy" class="form-select">
+                  <option selected>Featured</option>
+                  <option>Price: Low to High</option>
+                  <option>Price: High to Low</option>
+                  <option>Newest</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-2">
+                <button class="btn btn-dark w-100" type="button">Filter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Laptop" />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-success align-self-start mb-2">New</span>
+                <h5 class="card-title">MacBook Pro </h5>
+                <p class="card-text text-muted">Ultra-light laptop with 14-inch Retina display.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$1,299</span>
+                  <a href="product.html" class="btn btn-outline-dark btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://dream.ps/wp-content/uploads/2022/11/8-1.png" class="card-img-top" alt="Smartphone" />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-danger align-self-start mb-2">Sale</span>
+                <h5 class="card-title">iPhone 11 Pro Max</h5>
+                <p class="card-text text-muted">Flagship iPhone featuring a triple 12MP camera system, A13 Bionic chip, and stunning Super Retina XDR display.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$899</span>
+                  <a href="product.html" class="btn btn-outline-dark btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://www.apple.com/v/airpods-max/k/images/overview/product-stories/hifi-sound/modal/audio_bc_microphone__c4kgd4pga3cm_large.png" class="card-img-top" alt="Headphones" />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-primary align-self-start mb-2">Popular</span>
+                <h5 class="card-title">AirPods Max2</h5>
+                <p class="card-text text-muted">Immersive sound with active noise cancellation.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$199</span>
+                  <a href="product.html" class="btn btn-outline-dark btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://res.garmin.com/en_GB/products/010-02784-01/v/cf-lg.png" class="card-img-top" alt="Smartwatch" />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-info text-dark align-self-start mb-2">New</span>
+                <h5 class="card-title">Garmin Venu 3</h5>
+                <p class="card-text text-muted">Fitness tracking with AMOLED display and GPS.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$249</span>
+                  <a href="product.html" class="btn btn-outline-dark btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Sony_A7_IV_%28ILCE-7M4%29_-_by_Henry_S%C3%B6derlund_%2851739988735%29.jpg/1280px-Sony_A7_IV_%28ILCE-7M4%29_-_by_Henry_S%C3%B6derlund_%2851739988735%29.jpg" class="card-img-top" alt="Camera" />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-secondary align-self-start mb-2">Editor Pick</span>
+                <h5 class="card-title">Sony Alpha a7 IV </h5>
+                <p class="card-text text-muted">4K video and 45MP stills in a compact body.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$1,099</span>
+                  <a href="product.html" class="btn btn-outline-dark btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://hyperx.com/cdn/shop/files/hyperx_cloud_iii_red_66x0049_main_1_fe816ea7-5463-4bb2-b49f-65e64f003910.jpg?v=1771520345" class="card-img-top" alt="Gaming headset" />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-danger align-self-start mb-2">Sale</span>
+                <h5 class="card-title">hyperx cloud 3</h5>
+                <p class="card-text text-muted">Wireless gaming headset with 7.1 surround sound.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$159</span>
+                  <a href="product.html" class="btn btn-outline-dark btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://cdn.ihouse.ps/images/OxbuwKLQ8wDhP3odGNNyipVQRuGgVv7XFd48v0TA.png" class="card-img-top" alt="Tablet" />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-success align-self-start mb-2">New</span>
+                <h5 class="card-title">iPad Air</h5>
+                <p class="card-text text-muted">12.9-inch tablet with Pencil support and all-day battery.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$749</span>
+                  <a href="product.html" class="btn btn-outline-dark btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLP9LoIirHTbbZCLQD4SvRjWuctwDkyHnkAY4rkVdeMw&s=10" class="card-img-top" alt="Gaming controller" />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-warning text-dark align-self-start mb-2">Hot</span>
+                <h5 class="card-title">playstation 5 Controller</h5>
+                <p class="card-text text-muted">Precision gaming controller with customizable buttons.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$79</span>
+                  <a href="product.html" class="btn btn-outline-dark btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsz8GfdWvR6UfZaQnnQUFmggAa4SmeWQvzNSV2J0Ardg&s=10" class="card-img-top" alt="Wireless earbuds" />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-primary align-self-start mb-2">Popular</span>
+                <h5 class="card-title">AirPods Pro</h5>
+                <p class="card-text text-muted">Water-resistant earbuds with adaptive noise canceling.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$129</span>
+                  <a href="product.html" class="btn btn-outline-dark btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ4nHE6-j9TCrZFgaKczF5HaPeczYsmtkHw6CgjXgxItCOETti8kYr2dQ&s=10" class="card-img-top" alt="Desktop monitor" />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-info text-dark align-self-start mb-2">Trending</span>
+                <h5 class="card-title">odyssey g7 Monitor</h5>
+                <p class="card-text text-muted">27-inch 4K monitor with color-accurate display.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$349</span>
+                  <a href="product.html" class="btn btn-outline-dark btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGBzhWgKiFGuuAtdQT0dO2VkGQ0mg4M8t0TuqFK7gzig&s=10" class="card-img-top" alt="USB C hub" />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-success align-self-start mb-2">New</span>
+                <h5 class="card-title">MacBook Pro M4</h5>
+                <p class="card-text text-muted">Expand your laptop with 7 ports and70W charging.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$1420</span>
+                  <a href="product.html" class="btn btn-outline-dark btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://kh.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwe6488d5f/Extreme2_Hero_Black-1605x1605px.png?sw=537&sfrm=png" class="card-img-top" alt="Portable speaker" />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-danger align-self-start mb-2">Sale</span>
+                <h5 class="card-title">JBL Xtreme 2</h5>
+                <p class="card-text text-muted">Compact Bluetooth speaker with rich bass and 20h battery.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">$89</span>
+                  <a href="product.html" class="btn btn-outline-dark btn-sm">View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav aria-label="Shop pagination" class="mt-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h5>TechStore</h5>
+            <p class="text-white-50">Your premium destination for the latest electronics and accessories.</p>
+          </div>
+          <div class="col-md-2">
+            <h6>Shop</h6>
+            <ul class="list-unstyled text-white-50">
+              <li><a href="shop.html" class="text-white-50 text-decoration-none">All Products</a></li>
+              <li><a href="categories.html" class="text-white-50 text-decoration-none">Categories</a></li>
+              <li><a href="cart.html" class="text-white-50 text-decoration-none">Cart</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h6>Support</h6>
+            <ul class="list-unstyled text-white-50">
+              <li><a href="faq.html" class="text-white-50 text-decoration-none">FAQ</a></li>
+              <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6>Newsletter</h6>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Email address" />
+              <button class="btn btn-outline-light" type="button">Join</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

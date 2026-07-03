@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore | Product Details</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">TechStore</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            <li class="nav-item">
+              <a class="btn btn-outline-light" href="cart.html"><i class="bi bi-cart3"></i> Cart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="py-5 bg-light">
+      <div class="container">
+        <nav aria-label="breadcrumb" class="mb-4">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Home</a></li>
+            <li class="breadcrumb-item"><a href="shop.html" class="text-decoration-none">Shop</a></li>
+            <li class="breadcrumb-item active" aria-current="page">MacBook Air M2</li>
+          </ol>
+        </nav>
+
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-6">
+            <div class="card shadow-sm mb-3">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr67PfkiWaki5m9NtBZd0zqEiK6ON3KqbGSY_4DYgjthL_x0s3-a-bJHk&s=10" class="img-fluid rounded" alt="MacBook Air M2" />
+            </div>
+            <div class="row g-2">
+              <div class="col-3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZl6rN2sm-chthHyWx08d282XRzUXIZl1M4i92qUcxlQ&s=10" class="img-fluid rounded border" alt="Product view 1" /></div>
+              <div class="col-3"><img src="https://i.redd.it/2mzoqd5l9fdd1.jpeg" class="img-fluid rounded border" alt="Product view 2" /></div>
+              <div class="col-3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj5CnUXLIA3M6WdD80CbfAr2kimDKIrCPhKbC4TbtMje7awiUjEtMe9g4&s=10" class="img-fluid rounded border" alt="Product view 3" /></div>
+              <div class="col-3"><img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/refurb-macbook-air-m2-silver-202208_AV1?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=QkJpMElmU3Z2QTUxaWlZMkpyNUtsdlQxOXR0R2JEZG1NVlRjY2dYRjYzYS9BMm1qVVEyMTJMYVZ4MGFucjg5MFlsNGdDd3FRbHFCcnpRZnZlZVVZRkJSWisyK0RXSCtmMGRzcUtGOXNsYk81SVN5TW1GYXN2UGhaNGVCTXl0UFE" class="img-fluid rounded border" alt="Product view 4" /></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="badge bg-success mb-3">New</div>
+            <h1 class="fw-bold mb-2">MacBook Air M2</h1>
+            <div class="text-warning mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+              <span class="text-muted ms-2">4.7 (128 reviews)</span>
+            </div>
+            <h2 class="text-primary fw-bold mb-3">$1,099</h2>
+            <p class="text-muted">A premium ultrabook designed for productivity with a brilliant display, all-day battery life, and a sleek aluminum chassis.</p>
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <label for="quantity" class="form-label mb-0 fw-semibold">Quantity</label>
+              <input id="quantity" type="number" class="form-control w-auto" value="1" min="1" style="width: 90px;" />
+              <button class="btn btn-dark" type="button">Add to Cart</button>
+            </div>
+            <div class="card border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Product Specifications</h5>
+                <div class="table-responsive">
+                  <table class="table table-striped mb-0">
+                    <tbody>
+                      <tr><th scope="row">Brand</th><td>Apple</td></tr>
+                      <tr><th scope="row">Processor</th><td>Apple M2 chip</td></tr>
+                      <tr><th scope="row">RAM</th><td>16GB unified memory</td></tr>
+                      <tr><th scope="row">Storage</th><td>512GB SSD</td></tr>
+                      <tr><th scope="row">Display</th><td>13.6-inch Liquid Retina</td></tr>
+                      <tr><th scope="row">Battery</th><td>Up to 18 hours</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="mt-5">
+          <h3 class="fw-bold mb-3">Related Products</h3>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-3">
+              <div class="card h-100 shadow-sm">
+                <img src="https://cdn.mart.ps/247853-thickbox_default/samsung-galaxy-s24-ultra-256-12gb.jpg" class="card-img-top" alt="Galaxy S24 Ultra" />
+                <div class="card-body">
+                  <h5 class="card-title">Galaxy S24 Ultra</h5>
+                  <p class="card-text text-muted">$899</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="card h-100 shadow-sm">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNkZUVuOjAz0c9b6ngOlfVGmwM25hj261c4H0-KhhAZ7GnCVBAo_SFoyg6&s=10" class="card-img-top" alt="Sony WH-1000XM5" />
+                <div class="card-body">
+                  <h5 class="card-title">Sony WH-1000XM5</h5>
+                  <p class="card-text text-muted">$199</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="card h-100 shadow-sm">
+                <img src="https://res.garmin.com/en_GB/products/010-02784-01/v/cf-lg.png" class="card-img-top" alt="Garmin Venu 3" />
+                <div class="card-body">
+                  <h5 class="card-title">Garmin Venu 3</h5>
+                  <p class="card-text text-muted">$249</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="card h-100 shadow-sm">
+                <img src="https://i5.walmartimages.com/asr/3e261404-2c59-4690-8648-57f808bd636b.de8ffddad1d105e9517a3bde8aafb1fa.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" class="card-img-top" alt="iPad Air 5" />
+                <div class="card-body">
+                  <h5 class="card-title">iPad Air 5</h5>
+                  <p class="card-text text-muted">$749</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h5>TechStore</h5>
+            <p class="text-white-50">Your premium destination for the latest electronics and accessories.</p>
+          </div>
+          <div class="col-md-2">
+            <h6>Shop</h6>
+            <ul class="list-unstyled text-white-50">
+              <li><a href="shop.html" class="text-white-50 text-decoration-none">All Products</a></li>
+              <li><a href="categories.html" class="text-white-50 text-decoration-none">Categories</a></li>
+              <li><a href="cart.html" class="text-white-50 text-decoration-none">Cart</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h6>Support</h6>
+            <ul class="list-unstyled text-white-50">
+              <li><a href="faq.html" class="text-white-50 text-decoration-none">FAQ</a></li>
+              <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h6>Newsletter</h6>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Email address" />
+              <button class="btn btn-outline-light" type="button">Join</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
